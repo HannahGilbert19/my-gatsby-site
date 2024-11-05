@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '18.x'
 
@@ -25,7 +25,7 @@ jobs:
         run: npm install -g gatsby-cli
 
       - name: Build
-        run: gatsby build --prefix-paths
+        run: gatsby build
 
       - name: Verify build
         run: ls -la public
@@ -36,6 +36,17 @@ jobs:
           host: ${{ secrets.HOST }}         
           username: ${{ secrets.USER }}     
           key: ${{ secrets.PRIVATEKEY }} 
-          source: "public/*,docker-compose.yml"
-          target: "site/html"
-          strip_components: 2
+          source: "public/"
+          target: "site/newBranch"
+          strip_components: 1
+
+      - name: Finalize Deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.PRIVATEKEY }}
+          script: |
+            rm -rf site/mainBranch
+            mv site/newBranch site/mainBranch
+            mkdir site/newBranch
