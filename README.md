@@ -4,46 +4,18 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  My Gatsby Site
 </h1>
 
-## 🚀 Quick start
+## 🚀 Intro
 
-1.  **Create a Gatsby site.**
+1.  **What is this?**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    This project is a Gatsby-based web application built for a class project. Its primary purpose is to showcase a range of front-end development skills, using GatsbyJS for static site generation, React for component-based structure, and GraphQL for querying data.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+2.  **Current Features**
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    Dynamic Recipe Pages: Utilizes Gatsby’s page creation APIs to dynamically generate recipe pages from sourced data.
+    GraphQL Data Fetching: Fetches and displays data using GraphQL, showcasing its integration within Gatsby.
+    Dark Fantasy-Themed Styling: Inspired by Elden Ring, the project features unique styling with atmospheric visuals, typography, and responsive layout elements.
+    Reusable Components: The application has a modular component structure, making it easy to add, update, or reuse elements across pages.
